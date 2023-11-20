@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="skinTempVM" type="com.jamessapplication.app.modules.skintemp.data.viewmodel.SkinTempVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSkinTemp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_50">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackskintemperatur"
+            android:layout_height="@dimen/_478pxv"
+            android:layout_marginTop="@dimen/_66pxv" android:layout_width="match_parent">
+            <TextView android:id="@+id/txtSkinTemperatur"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_102pxh"
+                android:layout_marginStart="@dimen/_102pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:text="@{skinTempVM.skinTempModel.txtSkinTemperatur}"
+                style="@style/txtPhilosopherregular28" tools:text="@string/msg_skin_temperatu"/>
+            <LinearLayout android:id="@+id/linearElements"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnduration"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4pxh"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDuration"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{skinTempVM.skinTempModel.txtDuration}"
+                        android:textAllCaps="true"
+                        style="@style/txtNunitoSansregular9" tools:text="@string/msg_today_8_may_1"/>
+                    <LinearLayout
+                        android:id="@+id/linearRowtwohundredfifty"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTwoHundredFifty"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{skinTempVM.skinTempModel.txtTwoHundredFifty}"
+                            android:textAllCaps="true"
+                            style="@style/txtNunitoSanssemibold9" tools:text="@string/lbl_250"/>
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                            android:id="@+id/lineLineTwelve"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginStart="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_weight="0.95" android:layout_width="0dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearRowtwohundred"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTwoHundred"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{skinTempVM.skinTempModel.txtTwoHundred}"
+                            android:textAllCaps="true"
+                            style="@style/txtNunitoSanssemibold9_1" tools:text="@string/lbl_200"/>
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                            android:id="@+id/lineLineTwelveOne"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginStart="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_weight="0.95" android:layout_width="0dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearRowonehundredfifty"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtOneHundredFifty"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{skinTempVM.skinTempModel.txtOneHundredFifty}"
+                            android:textAllCaps="true"
+                            style="@style/txtNunitoSanssemibold9_2" tools:text="@string/lbl_150"/>
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                            android:id="@+id/lineLineTwelveTwo"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginStart="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_weight="0.95" android:layout_width="0dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearRowonehundred"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtOneHundred"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{skinTempVM.skinTempModel.txtOneHundred}"
+                            android:textAllCaps="true"
+                            style="@style/txtNunitoSanssemibold9_3" tools:text="@string/lbl_100"/>
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                            android:id="@+id/lineLineTwelveThree"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginStart="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_weight="0.95" android:layout_width="0dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearRowfifty"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtFifty"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.03"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{skinTempVM.skinTempModel.txtFifty}"
+                            android:textAllCaps="true"
+                            style="@style/txtNunitoSanssemibold9_4" tools:text="@string/lbl_50"/>
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                            android:id="@+id/lineLineTwelveFour"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginStart="@dimen/_8pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_weight="0.97" android:layout_width="0dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearRowzero"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtZero"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.02"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{skinTempVM.skinTempModel.txtZero}"
+                            android:textAllCaps="true"
+                            style="@style/txtNunitoSanssemibold9_5" tools:text="@string/lbl_0"/>
+                        <ImageView android:id="@+id/imageFrameFortyTwo"
+                            android:layout_height="@dimen/_8pxh"
+                            android:layout_marginBottom="@dimen/_4pxv"
+                            android:layout_marginStart="@dimen/_14pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_frame42"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_frame42"/>
+                    </LinearLayout>
+                    <View android:id="@+id/lineFrameFortyOne"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_344pxh"/>
+                    <LinearLayout android:gravity="center_vertical"
+                        android:id="@+id/linearRowtime"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginEnd="@dimen/_73pxh"
+                        android:layout_marginStart="@dimen/_82pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTime"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.18"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{skinTempVM.skinTempModel.txtTime}"
+                            android:textAllCaps="true"
+                            style="@style/txtNunitoSanssemibold9_6" tools:text="@string/lbl_06_00"/>
+                        <LinearLayout android:id="@+id/linearRowtimeOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_61pxh"
+                            android:layout_weight="0.82"
+                            android:layout_width="0dp" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtTimeOne"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{skinTempVM.skinTempModel.txtTimeOne}"
+                                android:textAllCaps="true"
+                                style="@style/txtNunitoSanssemibold9_6" tools:text="@string/lbl_12_00"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtTimeTwo"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_61pxh"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{skinTempVM.skinTempModel.txtTimeTwo}"
+                                android:textAllCaps="true"
+                                style="@style/txtNunitoSanssemibold9_6" tools:text="@string/lbl_18_00"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerSkinTemp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_8pxh}" tools:itemCount="2" tools:listitem="@layout/row_skin_temp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowarrowright"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_105pxh"
+            android:layout_marginStart="@dimen/_105pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStyleamber_600cornerRadius">
+            <ImageView android:id="@+id/imageArrowright"
+                android:layout_height="@dimen/_18pxh"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="@dimen/_21pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGetStarted"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_weight="0.82" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{skinTempVM.skinTempModel.txtGetStarted}"
+                style="@style/txtMitrmedium14" tools:text="@string/lbl_back_to_home"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

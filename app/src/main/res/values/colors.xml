@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<color name="light_green_A700">#64da3b</color>
+  <color name="red_500">#ff3131</color>
+  <color name="light_blue_900">#004684</color>
+  <color name="amber_A700">#ffad00</color>
+  <color name="black_900">#000000</color>
+  <color name="bluegray_900_5e">#5e002140</color>
+  <color name="pink_700_0c">#0ccb003f</color>
+  <color name="deep_orange_100">#f9c1bb</color>
+  <color name="gray_600">#7b7b7b</color>
+  <color name="orange_A100">#fed785</color>
+  <color name="indigo_52">#e2e6ee</color>
+  <color name="amber_500">#e7c308</color>
+  <color name="lime_700">#abc314</color>
+  <color name="indigo_50">#e5edf6</color>
+  <color name="amber_600">#fcb006</color>
+  <color name="gray_800">#444444</color>
+  <color name="gray_900">#151515</color>
+  <color name="indigo_51">#e5ecf5</color>
+  <color name="amber_700">#fc9c0c</color>
+  <color name="bluegray_100">#cecece</color>
+  <color name="amber_200">#fed885</color>
+  <color name="gray_200">#efefef</color>
+  <color name="gray_300">#d6dcf2</color>
+  <color name="indigo_300">#7fa3ce</color>
+  <color name="bluegray_900">#002140</color>
+  <color name="indigo_100">#a9c3e2</color>
+  <color name="bluegray_700">#485065</color>
+  <color name="bluegray_600">#596479</color>
+  <color name="bluegray_401">#8a8a8d</color>
+  <color name="indigo_50_cf">#cfe5edf6</color>
+  <color name="bluegray_400">#73809b</color>
+  <color name="bluegray_300">#a2aabc</color>
+  <color name="bluegray_101">#d9d9d9</color>
+  <color name="black_900_19">#19000000</color>
+  <color name="white_A700">#ffffff</color>
+  <color name="cyan_700">#0b8aa0</color>
+  <color name="bluegray_901">#363636</color>
+</resources>

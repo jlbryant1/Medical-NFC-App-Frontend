@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listnameRowModel" type="com.jamessapplication.app.modules.personalprofile.data.model.ListnameRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowname"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnname"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_weight="0.16" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtName"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listnameRowModel.txtName}"
+                style="@style/txtMitrlight11_1" tools:text="@string/lbl_name"/>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtContact"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listnameRowModel.txtContact}"
+                style="@style/txtMitrlight11_1" tools:text="@string/lbl_contact"/>
+            <TextView android:gravity="end"
+                android:id="@+id/txtDateofbirth"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent"
+                android:text="@{listnameRowModel.txtDateofbirth}"
+                style="@style/txtMitrlight11_1" tools:text="@string/lbl_date_of_birth"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtMedicalConditi"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent"
+                android:text="@{listnameRowModel.txtMedicalConditi}"
+                style="@style/txtMitrlight9" tools:text="@string/msg_medical_conditi"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumneighteen"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_weight="0.84" android:layout_width="0dp" android:orientation="vertical">
+            <EditText android:background="@android:color/transparent"
+                android:ellipsize="end" android:hint="@string/lbl_john"
+                android:id="@+id/etEighteen" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@={listnameRowModel.etEighteenValue}"
+                android:textColorHint="@color/black_900"
+                style="@style/etMitrlight14" tools:ignore="Autofill"/>
+            <View android:background="@color/cyan_700"
+                android:id="@+id/lineLineSeventeen"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_253pxh"/>
+            <EditText android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/lbl_1_555_555_5555"
+                android:id="@+id/etNineteen" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@={listnameRowModel.etNineteenValue}"
+                android:textColorHint="@color/black_900"
+                style="@style/etMitrlight14" tools:ignore="Autofill"/>
+            <View android:background="@color/cyan_700"
+                android:id="@+id/lineLineTwenty"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_253pxh"/>
+            <EditText android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/lbl_00_00_0000"
+                android:id="@+id/etTwenty" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@={listnameRowModel.etTwentyValue}"
+                android:textColorHint="@color/black_900"
+                style="@style/etMitrlight14" tools:ignore="Autofill"/>
+            <View android:background="@color/cyan_700"
+                android:id="@+id/lineLineNineteen"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_253pxh"/>
+            <EditText android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/msg_current_or_prev"
+                android:id="@+id/etTwentyOne" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@={listnameRowModel.etTwentyOneValue}"
+                android:textColorHint="@color/black_900"
+                style="@style/etMitrlight14" tools:ignore="Autofill"/>
+            <View android:background="@color/cyan_700"
+                android:id="@+id/lineLineTwentyOne"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_253pxh"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

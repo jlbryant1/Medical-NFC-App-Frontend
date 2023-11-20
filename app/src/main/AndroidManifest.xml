@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.jamessapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.jamessapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.jamessapplication.app.modules.spotwo.ui.SpotwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.emergencycontact.ui.EmergencyContactActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.breathingrate.ui.BreathingRateActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.accountdeletion.ui.AccountDeletionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.jamessapplication.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jamessapplication.app.modules.userdetails.ui.UserDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.hrv.ui.HrvActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.personalprofile.ui.PersonalProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.scannfc.ui.ScanNfcActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.welcome.ui.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.homescreen.ui.HomescreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.skintemp.ui.SkinTempActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

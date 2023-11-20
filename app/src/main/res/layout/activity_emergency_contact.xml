@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="emergencyContactVM" type="com.jamessapplication.app.modules.emergencycontact.data.viewmodel.EmergencyContactVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearEmergencyConta"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_50">
+        <ImageView android:id="@+id/imageArrowleft"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_21pxh"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="@dimen/_25pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowleft_amber_a700"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_amber_a700"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{emergencyContactVM.emergencyContactModel.txtLanguage}"
+            style="@style/txtPhilosopherregular28" tools:text="@string/msg_emergency_conta"/>
+        <androidx.appcompat.widget.SearchView
+            android:background="@drawable/rectangle_bg_gray_200_radius_15"
+            android:gravity="center_horizontal"
+            android:id="@+id/searchViewSearchBar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:theme="@style/searchViewSearchBar"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="@string/lbl_search" app:searchIcon="@drawable/img_search"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:gravity="center_horizontal"
+            android:id="@+id/recyclerListrectanglethirtynine"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            itemSpace="@{@dimen/_1pxh}" tools:itemCount="3" tools:listitem="@layout/row_listrectanglethirtynine"/>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowarrowright"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_125pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_107pxv"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStyleamber_600cornerRadius">
+            <ImageView android:id="@+id/imageArrowright"
+                android:layout_height="@dimen/_18pxh"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="@dimen/_21pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGetStarted"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_weight="0.82" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{emergencyContactVM.emergencyContactModel.txtGetStarted}"
+                style="@style/txtMitrmedium14" tools:text="@string/lbl_back_to_home"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

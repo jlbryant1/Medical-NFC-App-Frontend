@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="accountDeletionVM" type="com.jamessapplication.app.modules.accountdeletion.data.viewmodel.AccountDeletionVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearAccountDeletio"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_50">
+        <ImageView android:id="@+id/imageArrowleft"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_21pxh"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="@dimen/_25pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowleft_amber_a700"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_amber_a700"/>
+        <ImageView android:id="@+id/imageArrowOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_marginEnd="@dimen/_57pxh"
+            android:layout_marginStart="@dimen/_57pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_width="@dimen/_43pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_arrow1"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrow1"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtClickbuttonto"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{accountDeletionVM.accountDeletionModel.txtClickbuttonto}"
+            style="@style/txtPhilosopherregular14_1" tools:text="@string/msg_click_button_to"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtConfirmation"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_54pxv"
+            android:layout_width="match_parent"
+            android:text="@{accountDeletionVM.accountDeletionModel.txtConfirmation}"
+            style="@style/txtPhilosopherbolditalic30" tools:text="@string/msg_are_you_sure_ab"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnDeleteNow"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_48pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_62pxv"
+            android:layout_width="@dimen/_270pxh"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/lbl_delete_now"
+            android:textAllCaps="false"
+            style="@style/btnSolidRoundedOutline_4" tools:text="@string/lbl_delete_now"/>
+    </LinearLayout>
+</layout>
