@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.jamessapplication.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSplashScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_50">
+        <FrameLayout android:id="@+id/frameStackgroupone"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_195pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_83pxh"
+            android:layout_marginStart="@dimen/_84pxh"
+            android:layout_marginTop="@dimen/_222pxv" android:layout_width="@dimen/_192pxh">
+            <ImageView android:id="@+id/imageGroupOne"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_179pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group1_orange_a100"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group1_orange_a100"/>
+            <ImageView android:id="@+id/imageImageOne"
+                android:layout_gravity="bottom|end"
+                android:layout_height="@dimen/_42pxh"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_35pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image1"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

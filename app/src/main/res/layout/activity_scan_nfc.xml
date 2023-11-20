@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="scanNfcVM" type="com.jamessapplication.app.modules.scannfc.data.viewmodel.ScanNfcVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearScanNFC"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_50">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_128pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{scanNfcVM.scanNfcModel.txtLanguage}"
+            style="@style/txtPhilosopherbolditalic30" tools:text="@string/lbl_press_and_get"/>
+        <FrameLayout android:id="@+id/frameStackcirclebgacti"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_141pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_23pxv" android:layout_width="@dimen/_145pxh">
+            <View
+                android:background="@drawable/rectangle_bg_amber_200_border_amber_600_radius_72_5"
+                android:id="@+id/viewCirclebgacti"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_141pxv" android:layout_width="@dimen/_145pxh"/>
+            <LinearLayout android:id="@+id/linearColumnwavescompone"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_41pxv"
+                android:layout_marginEnd="@dimen/_53pxh"
+                android:layout_marginStart="@dimen/_53pxh"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:gravity="center_horizontal"
+                    android:id="@+id/imageWavescompone"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_wavescompone_bluegray_900"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_wavescompone_bluegray_900"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtNFC"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_2pxh"
+                    android:layout_marginStart="@dimen/_3pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{scanNfcVM.scanNfcModel.txtNFC}"
+                    style="@style/txtInterbold15" tools:text="@string/lbl_nfc"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtNFCclosertod"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_50pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{scanNfcVM.scanNfcModel.txtNFCclosertod}"
+            style="@style/txtPhilosopherbolditalic30" tools:text="@string/msg_nfc_closer_to_d"/>
+    </LinearLayout>
+</layout>

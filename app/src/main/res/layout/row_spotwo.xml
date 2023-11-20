@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="spotwoRowModel" type="com.jamessapplication.app.modules.spotwo.data.model.SpotwoRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumntoday"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_52cornerRadius">
+        <TextView android:ellipsize="end" android:id="@+id/txtToday"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_164pxh"
+            android:layout_marginStart="@dimen/_164pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{spotwoRowModel.txtToday}"
+            style="@style/txtNunitoSansbold10" tools:text="@string/lbl_today"/>
+        <LinearLayout android:id="@+id/linearRowtime"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+            <LinearLayout android:id="@+id/linearRowgrouptwentythree"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_weight="0.79" android:layout_width="0dp" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageGroupTwentyThree"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_9pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group23"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group23"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBloodpres"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_weight="0.51"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{spotwoRowModel.txtBloodpres}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSansbold7" tools:text="@string/lbl_60_100"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMmhg"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_weight="0.37"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{spotwoRowModel.txtMmhg}"
+                    style="@style/txtNunitoSansregular10" tools:text="@string/lbl_mmhg"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTimeThree"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_205pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_weight="0.21" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{spotwoRowModel.txtTimeThree}"
+                style="@style/txtNunitoSansregular9_1" tools:text="@string/lbl_14_06"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearRowtimeOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+            <LinearLayout android:id="@+id/linearRowgrouptwentythreeOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_weight="0.79" android:layout_width="0dp" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageGroupTwentyThreeOne"
+                    android:layout_height="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="@dimen/_9pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group23"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group23"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPrevBloodPres"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_weight="0.51"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{spotwoRowModel.txtPrevBloodPres}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSansbold7" tools:text="@string/lbl_60_100"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMmhgOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_weight="0.37"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{spotwoRowModel.txtMmhgOne}"
+                    style="@style/txtNunitoSansregular10" tools:text="@string/lbl_mmhg"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTimeOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_205pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_weight="0.21" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{spotwoRowModel.txtTimeOne}"
+                style="@style/txtNunitoSansregular9_1" tools:text="@string/lbl_14_06"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

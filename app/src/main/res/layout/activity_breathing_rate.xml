@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="breathingRateVM" type="com.jamessapplication.app.modules.breathingrate.data.viewmodel.BreathingRateVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearBreathingRate"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_50">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtBreathingRate"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_69pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{breathingRateVM.breathingRateModel.txtBreathingRate}"
+            style="@style/txtPhilosopherregular28" tools:text="@string/lbl_breathing_rate2"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnduration"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDuration"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{breathingRateVM.breathingRateModel.txtDuration}"
+                android:textAllCaps="true"
+                style="@style/txtNunitoSansregular9" tools:text="@string/msg_today_8_may_1"/>
+            <LinearLayout android:id="@+id/linearRowonehundred"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOneHundred"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{breathingRateVM.breathingRateModel.txtOneHundred}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSanssemibold9_4" tools:text="@string/lbl_100"/>
+                <View
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:id="@+id/lineLineTwelve"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.95" android:layout_width="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowninetyseven"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNinetySeven"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{breathingRateVM.breathingRateModel.txtNinetySeven}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSanssemibold9_3" tools:text="@string/lbl_97"/>
+                <View
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:id="@+id/lineLineTwelveOne"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.97" android:layout_width="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowninetyfour"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNinetyFour"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{breathingRateVM.breathingRateModel.txtNinetyFour}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSanssemibold9_2" tools:text="@string/lbl_94"/>
+                <View
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:id="@+id/lineLineTwelveTwo"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.97" android:layout_width="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowninetyone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNinetyOne"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{breathingRateVM.breathingRateModel.txtNinetyOne}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSanssemibold9_1" tools:text="@string/lbl_91"/>
+                <View
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:id="@+id/lineLineTwelveThree"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.97" android:layout_width="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRoweightyeight"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEightyEight"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{breathingRateVM.breathingRateModel.txtEightyEight}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSanssemibold9" tools:text="@string/lbl_88"/>
+                <View
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:id="@+id/lineLineTwelveFour"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.97" android:layout_width="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRoweightyfive"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEightyFive"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{breathingRateVM.breathingRateModel.txtEightyFive}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSanssemibold9_5" tools:text="@string/lbl_85"/>
+                <ImageView android:id="@+id/imageFrameFortyTwo"
+                    android:layout_height="@dimen/_7pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_frame42_pink_100"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_frame42_pink_100"/>
+            </LinearLayout>
+            <View android:id="@+id/lineFrameFortyOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_5pxv"
+                android:layout_marginStart="@dimen/_7pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_327pxh"/>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowtimeTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_69pxh"
+                android:layout_marginStart="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowtime"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.82"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTime"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{breathingRateVM.breathingRateModel.txtTime}"
+                        android:textAllCaps="true"
+                        style="@style/txtNunitoSanssemibold9_6" tools:text="@string/lbl_06_00"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTimeOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_59pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{breathingRateVM.breathingRateModel.txtTimeOne}"
+                        android:textAllCaps="true"
+                        style="@style/txtNunitoSanssemibold9_6" tools:text="@string/lbl_12_00"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTimeTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_59pxh"
+                    android:layout_weight="0.18"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{breathingRateVM.breathingRateModel.txtTimeTwo}"
+                    android:textAllCaps="true"
+                    style="@style/txtNunitoSanssemibold9_6" tools:text="@string/lbl_18_00"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:gravity="center_horizontal"
+            android:id="@+id/recyclerBreathingRate"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            itemSpace="@{@dimen/_8pxh}" tools:itemCount="2" tools:listitem="@layout/row_breathing_rate"/>
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowarrowright"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal" style="@style/groupStyleamber_600cornerRadius">
+            <ImageView android:id="@+id/imageArrowright"
+                android:layout_height="@dimen/_18pxh"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="@dimen/_21pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGetStarted"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_weight="0.82" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{breathingRateVM.breathingRateModel.txtGetStarted}"
+                style="@style/txtMitrmedium14" tools:text="@string/lbl_back_to_home"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
