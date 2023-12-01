@@ -8,7 +8,7 @@ data class HomescreenModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtWelcome: String? = MyApp.getInstance().resources.getString(R.string.lbl_welcome2)
+  var txtWelcome: String? = MyApp.getInstance().resources.getString(R.string.lbl_welcome)
   ,
   /**
    * TODO Replace with dynamic value
@@ -24,19 +24,16 @@ data class HomescreenModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtSkinTemperatur: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_skin_temperatur)
+  var txtSleep: String? = MyApp.getInstance().resources.getString(R.string.lbl_sleep)
   ,
   /**
    * TODO Replace with dynamic value
    */
-  var txtBloodOxygenSa: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_blood_oxygen_sa)
+  var txtUserActivity: String? = MyApp.getInstance().resources.getString(R.string.lbl_user_activity)
   ,
   /**
    * TODO Replace with dynamic value
    */
-  var txtHeartRateVari: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_heart_rate_vari)
+  var txtHeartRate: String? = MyApp.getInstance().resources.getString(R.string.lbl_heart_rate)
 
 )

@@ -19,7 +19,7 @@ class BreathingRateActivity :
     BaseActivity<ActivityBreathingRateBinding>(R.layout.activity_breathing_rate) {
   private val viewModel: BreathingRateVM by viewModels<BreathingRateVM>()
 
-  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 416
+  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 687
 
 
   override fun onInitialized(): Unit {
@@ -41,7 +41,7 @@ class BreathingRateActivity :
   }
 
   override fun setUpClicks(): Unit {
-    binding.linearRowarrowright.setOnClickListener {
+    binding.linearRowvector.setOnClickListener {
       val destIntent = HomescreenActivity.getIntent(this, null)
       startActivityForResult(destIntent, REQUEST_CODE_HOMESCREEN_ACTIVITY)
     }

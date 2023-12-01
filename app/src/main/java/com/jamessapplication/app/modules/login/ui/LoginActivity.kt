@@ -7,9 +7,8 @@ import androidx.activity.viewModels
 import com.jamessapplication.app.R
 import com.jamessapplication.app.appcomponents.base.BaseActivity
 import com.jamessapplication.app.databinding.ActivityLoginBinding
-import com.jamessapplication.app.modules.homescreen.ui.HomescreenActivity
 import com.jamessapplication.app.modules.login.`data`.viewmodel.LoginVM
-import com.jamessapplication.app.modules.signup.ui.SignUpActivity
+import com.jamessapplication.app.modules.viewaccount.ui.ViewAccountActivity
 import kotlin.Int
 import kotlin.String
 import kotlin.Unit
@@ -17,7 +16,7 @@ import kotlin.Unit
 class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login) {
   private val viewModel: LoginVM by viewModels<LoginVM>()
 
-  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 508
+  private val REQUEST_CODE_VIEW_ACCOUNT_ACTIVITY: Int = 447
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
@@ -25,13 +24,9 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(R.layout.activity_login
   }
 
   override fun setUpClicks(): Unit {
-    binding.txtConfirmation.setOnClickListener {
-      val destIntent = SignUpActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
     binding.btnLogin.setOnClickListener {
-      val destIntent = HomescreenActivity.getIntent(this, null)
-      startActivityForResult(destIntent, REQUEST_CODE_HOMESCREEN_ACTIVITY)
+      val destIntent = ViewAccountActivity.getIntent(this, null)
+      startActivityForResult(destIntent, REQUEST_CODE_VIEW_ACCOUNT_ACTIVITY)
     }
   }
 
