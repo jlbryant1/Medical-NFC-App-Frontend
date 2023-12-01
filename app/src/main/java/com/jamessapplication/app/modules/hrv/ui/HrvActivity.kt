@@ -18,7 +18,7 @@ import kotlin.Unit
 class HrvActivity : BaseActivity<ActivityHrvBinding>(R.layout.activity_hrv) {
   private val viewModel: HrvVM by viewModels<HrvVM>()
 
-  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 362
+  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 115
 
 
   override fun onInitialized(): Unit {
@@ -39,7 +39,7 @@ class HrvActivity : BaseActivity<ActivityHrvBinding>(R.layout.activity_hrv) {
   }
 
   override fun setUpClicks(): Unit {
-    binding.linearRowarrowright.setOnClickListener {
+    binding.linearRowvector.setOnClickListener {
       val destIntent = HomescreenActivity.getIntent(this, null)
       startActivityForResult(destIntent, REQUEST_CODE_HOMESCREEN_ACTIVITY)
     }

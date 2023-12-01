@@ -8,13 +8,7 @@ data class SignUpModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtSignUp: String? = MyApp.getInstance().resources.getString(R.string.lbl_sign_up2)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var txtConfirmation: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_already_have_an)
+  var txtSignUp: String? = MyApp.getInstance().resources.getString(R.string.lbl_sign_up)
   ,
   /**
    * TODO Replace with dynamic value

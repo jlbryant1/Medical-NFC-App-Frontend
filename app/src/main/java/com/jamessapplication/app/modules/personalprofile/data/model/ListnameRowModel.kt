@@ -29,10 +29,6 @@ data class ListnameRowModel(
   /**
    * TODO Replace with dynamic value
    */
-  var etEighteenValue: String? = null,
-  /**
-   * TODO Replace with dynamic value
-   */
   var etNineteenValue: String? = null,
   /**
    * TODO Replace with dynamic value
@@ -41,5 +37,9 @@ data class ListnameRowModel(
   /**
    * TODO Replace with dynamic value
    */
-  var etTwentyOneValue: String? = null
+  var etTwentyOneValue: String? = null,
+  /**
+   * TODO Replace with dynamic value
+   */
+  var etTwentyTwoValue: String? = null
 )

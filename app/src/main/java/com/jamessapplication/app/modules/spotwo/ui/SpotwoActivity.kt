@@ -18,7 +18,7 @@ import kotlin.Unit
 class SpotwoActivity : BaseActivity<ActivitySpotwoBinding>(R.layout.activity_spotwo) {
   private val viewModel: SpotwoVM by viewModels<SpotwoVM>()
 
-  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 531
+  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 792
 
 
   override fun onInitialized(): Unit {
@@ -39,7 +39,7 @@ class SpotwoActivity : BaseActivity<ActivitySpotwoBinding>(R.layout.activity_spo
   }
 
   override fun setUpClicks(): Unit {
-    binding.linearRowarrowright.setOnClickListener {
+    binding.linearRowvector.setOnClickListener {
       val destIntent = HomescreenActivity.getIntent(this, null)
       startActivityForResult(destIntent, REQUEST_CODE_HOMESCREEN_ACTIVITY)
     }

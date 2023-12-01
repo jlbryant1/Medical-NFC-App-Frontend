@@ -8,8 +8,7 @@ data class SkinTempModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtSkinTemperatur: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_skin_temperatu)
+  var txtSleep: String? = MyApp.getInstance().resources.getString(R.string.lbl_sleep)
   ,
   /**
    * TODO Replace with dynamic value

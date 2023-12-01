@@ -8,21 +8,23 @@
         android:id="@+id/linearHRV" android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical" style="@style/groupStyleindigo_50">
-        <TextView android:id="@+id/txtHeartRateVari"
+        <TextView android:ellipsize="end" android:id="@+id/txtHeartRate"
             android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_14pxh"
             android:layout_marginStart="@dimen/_14pxh"
-            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_marginTop="@dimen/_66pxv"
             android:layout_width="wrap_content"
-            android:lineSpacingExtra="@dimen/_1pxh"
-            android:text="@{hrvVM.hrvModel.txtHeartRateVari}"
-            style="@style/txtPhilosopherregular28" tools:text="@string/msg_heart_rate_var"/>
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{hrvVM.hrvModel.txtHeartRate}"
+            style="@style/txtPhilosopherregular28" tools:text="@string/lbl_heart_rate"/>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearColumnduration"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_4pxh"
             android:layout_marginStart="@dimen/_2pxh"
+            android:layout_marginTop="@dimen/_51pxv"
             android:layout_width="match_parent"
             android:orientation="vertical" style="@style/groupStylecornerRadius">
             <TextView android:ellipsize="end"
@@ -47,7 +49,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9" tools:text="@string/lbl_250"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
                     android:id="@+id/lineLineTwelve"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_6pxv"
@@ -68,7 +70,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9_1" tools:text="@string/lbl_200"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
                     android:id="@+id/lineLineTwelveOne"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_6pxv"
@@ -89,7 +91,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9_2" tools:text="@string/lbl_150"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
                     android:id="@+id/lineLineTwelveTwo"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_6pxv"
@@ -110,7 +112,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9_3" tools:text="@string/lbl_100"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
                     android:id="@+id/lineLineTwelveThree"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_6pxv"
@@ -131,7 +133,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9_4" tools:text="@string/lbl_50"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_400"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
                     android:id="@+id/lineLineTwelveFour"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_6pxv"
@@ -220,7 +222,7 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             itemSpace="@{@dimen/_8pxh}" tools:itemCount="2" tools:listitem="@layout/row_hrv"/>
         <LinearLayout android:gravity="center_vertical"
-            android:id="@+id/linearRowarrowright"
+            android:id="@+id/linearRowvector"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_16pxv"
             android:layout_marginEnd="@dimen/_14pxh"
@@ -228,7 +230,7 @@
             android:layout_marginTop="@dimen/_85pxv"
             android:layout_width="wrap_content"
             android:orientation="horizontal" style="@style/groupStyleamber_600cornerRadius">
-            <ImageView android:id="@+id/imageArrowright"
+            <ImageView android:id="@+id/imageVector"
                 android:layout_height="@dimen/_18pxh"
                 android:layout_marginBottom="@dimen/_14pxv"
                 android:layout_marginStart="@dimen/_9pxh"
