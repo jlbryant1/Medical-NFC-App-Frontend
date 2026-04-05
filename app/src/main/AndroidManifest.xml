@@ -17,8 +17,6 @@
             android:name="com.jamessapplication.app.modules.emergencycontact.ui.EmergencyContactActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.jamessapplication.app.modules.breathingrate.ui.BreathingRateActivity" android:screenOrientation="portrait"/>
-        <activity
-            android:name="com.jamessapplication.app.modules.accountdeletion.ui.AccountDeletionActivity" android:screenOrientation="portrait"/>
         <activity android:exported="true"
             android:name="com.jamessapplication.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
             <intent-filter>
@@ -33,16 +31,22 @@
         <activity
             android:name="com.jamessapplication.app.modules.personalprofile.ui.PersonalProfileActivity" android:screenOrientation="portrait"/>
         <activity
+            android:name="com.jamessapplication.app.modules.addcontacts.ui.AddContactsActivity" android:screenOrientation="portrait"/>
+        <activity
             android:name="com.jamessapplication.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.viewaccount.ui.ViewAccountActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.jamessapplication.app.modules.scannfc.ui.ScanNfcActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jamessapplication.app.modules.welcome.ui.WelcomeActivity" android:screenOrientation="portrait"/>
-        <activity
             android:name="com.jamessapplication.app.modules.homescreen.ui.HomescreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.completesetup.ui.CompleteSetupActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.jamessapplication.app.modules.skintemp.ui.SkinTempActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.jamessapplication.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jamessapplication.app.modules.createaccount.ui.CreateAccountActivity" android:screenOrientation="portrait"/>
     </application>
 </manifest>

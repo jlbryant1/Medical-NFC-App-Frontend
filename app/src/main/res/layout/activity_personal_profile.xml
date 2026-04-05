@@ -4,53 +4,31 @@
     <data>
         <variable name="personalProfileVM" type="com.jamessapplication.app.modules.personalprofile.data.viewmodel.PersonalProfileVM"/>
     </data>
-    <FrameLayout android:id="@+id/framePersonalProfil"
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearPersonalProfil"
         android:layout_height="match_parent"
-        android:layout_width="match_parent" style="@style/groupStyleindigo_50_cf">
-        <LinearLayout android:id="@+id/linearColumnarrowleft"
-            android:layout_gravity="center"
-            android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_50_cf">
+        <ImageView android:id="@+id/imageArrowleft"
+            android:layout_height="@dimen/_19pxh"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="@dimen/_30pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowleft"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumn"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_6pxv"
-            android:layout_marginEnd="@dimen/_14pxh"
-            android:layout_marginStart="@dimen/_20pxh"
-            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_21pxv"
             android:layout_width="match_parent" android:orientation="vertical">
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbarToolbar"
+            <LinearLayout android:id="@+id/linearColumnellipsesix"
                 android:layout_height="wrap_content"
-                android:layout_width="match_parent" app:contentInsetStart="0dp">
-                <LinearLayout android:id="@+id/linearRowarrowleft"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent" android:orientation="horizontal">
-                    <ImageView android:id="@+id/imageArrowleft"
-                        android:layout_height="@dimen/_21pxh"
-                        android:layout_marginBottom="@dimen/_1pxv"
-                        android:layout_marginTop="@dimen/_2pxv"
-                        android:layout_width="@dimen/_25pxh"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_arrowleft_amber_a700"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_amber_a700"/>
-                    <TextView android:ellipsize="end"
-                        android:id="@+id/txtVerify"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_181pxh"
-                        android:layout_weight="0.82"
-                        android:layout_width="0dp"
-                        android:paddingBottom="@dimen/_1pxv"
-                        android:paddingEnd="@dimen/_5pxh"
-                        android:paddingStart="@dimen/_5pxh"
-                        android:paddingTop="@dimen/_1pxv"
-                        android:singleLine="true"
-                        android:text="@{personalProfileVM.personalProfileModel.txtVerify}"
-                        style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_delete_account"/>
-                </LinearLayout>
-            </androidx.appcompat.widget.Toolbar>
-            <LinearLayout android:gravity="start"
-                android:id="@+id/linearColumnellipsesix"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_2pxh"
                 android:layout_marginStart="@dimen/_3pxh"
-                android:layout_marginTop="@dimen/_22pxv"
                 android:layout_width="match_parent"
                 android:orientation="vertical" style="@style/groupStyleorange_1">
                 <LinearLayout android:gravity="start"
@@ -67,7 +45,7 @@
                         android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_89pxh"/>
                     <ImageButton
                         android:background="@drawable/rectangle_bg_pink_700_0c_radius_12_565"
-                        android:id="@+id/btnEdit"
+                        android:id="@+id/btnFrame150"
                         android:layout_height="@dimen/_25pxh"
                         android:layout_marginBottom="@dimen/_1pxv"
                         android:layout_marginStart="@dimen/_2pxh"
@@ -101,6 +79,7 @@
                     itemSpace="@{@dimen/_10pxh}" tools:itemCount="2" tools:listitem="@layout/row_listname"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtHeight"
+                    android:layout_gravity="start"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_10pxh"
                     android:layout_marginStart="@dimen/_9pxh"
@@ -109,28 +88,58 @@
                     android:singleLine="true"
                     android:text="@{personalProfileVM.personalProfileModel.txtHeight}"
                     style="@style/txtMitrlight9" tools:text="@string/lbl_height"/>
-                <RadioButton android:ellipsize="end"
-                    android:id="@+id/rbRowclock"
-                    android:layout_gravity="center_horizontal"
+                <LinearLayout android:id="@+id/linearRowgender"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_21pxh"
-                    android:layout_marginStart="@dimen/_21pxh"
-                    android:layout_marginTop="@dimen/_18pxv"
-                    android:layout_width="wrap_content"
-                    android:singleLine="true"
-                    android:text="@string/lbl_genders"
-                    android:textColor="@color/black_900"
-                    android:textSize="@dimen/_8pxh" tools:text="@string/lbl_genders"/>
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGender"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_weight="0.11"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{personalProfileVM.personalProfileModel.txtGender}"
+                        style="@style/txtMitrlight9" tools:text="@string/lbl_gender"/>
+                    <FrameLayout android:id="@+id/frameStacktwentyseven"
+                        android:layout_height="@dimen/_24pxv"
+                        android:layout_marginStart="@dimen/_9pxh" android:layout_width="@dimen/_253pxh">
+                        <EditText
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_male_or_female"
+                            android:id="@+id/etTwentySeven"
+                            android:inputType="text"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_5pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@={personalProfileVM.personalProfileModel.etTwentySevenValue}"
+                            android:textColorHint="@color/black_900"
+                            style="@style/etMitrlight14" tools:ignore="Autofill"/>
+                        <View android:background="@color/cyan_700"
+                            android:id="@+id/lineLineTwentyOneTwo"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_253pxh"/>
+                    </FrameLayout>
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout android:gravity="start"
-                android:id="@+id/linearRowverifyOne"
+                android:id="@+id/linearRowverify"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_10pxh"
-                android:layout_marginStart="@dimen/_1pxh"
-                android:layout_marginTop="@dimen/_36pxv"
+                android:layout_marginTop="@dimen/_29pxv"
                 android:layout_width="match_parent" android:orientation="horizontal">
                 <TextView android:ellipsize="end"
-                    android:id="@+id/txtVerifyOne"
+                    android:id="@+id/txtVerify"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
@@ -139,10 +148,10 @@
                     android:paddingStart="@dimen/_30pxh"
                     android:paddingTop="@dimen/_2pxv"
                     android:singleLine="true"
-                    android:text="@{personalProfileVM.personalProfileModel.txtVerifyOne}"
-                    style="@style/txtSolidRoundedOutline_1" tools:text="@string/lbl_edit_details"/>
+                    android:text="@{personalProfileVM.personalProfileModel.txtVerify}"
+                    style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_edit_details"/>
                 <TextView android:ellipsize="end"
-                    android:id="@+id/txtVerifyTwo"
+                    android:id="@+id/txtVerifyOne"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_29pxh"
                     android:layout_weight="0.5"
@@ -152,9 +161,9 @@
                     android:paddingStart="@dimen/_4pxh"
                     android:paddingTop="@dimen/_6pxv"
                     android:singleLine="true"
-                    android:text="@{personalProfileVM.personalProfileModel.txtVerifyTwo}"
-                    style="@style/txtSolidRoundedOutline_2" tools:text="@string/msg_add_emergency_c"/>
+                    android:text="@{personalProfileVM.personalProfileModel.txtVerifyOne}"
+                    style="@style/txtSolidRoundedOutline_1" tools:text="@string/msg_add_emergency_c"/>
             </LinearLayout>
         </LinearLayout>
-    </FrameLayout>
+    </LinearLayout>
 </layout>

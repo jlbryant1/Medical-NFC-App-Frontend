@@ -58,15 +58,15 @@
                         android:layout_marginBottom="@dimen/_3pxv"
                         android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_100pxh"/>
                     <TextView android:ellipsize="end"
-                        android:id="@+id/txtNine"
+                        android:id="@+id/txtTen"
                         android:layout_gravity="start"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_10pxh"
                         android:layout_marginStart="@dimen/_8pxh"
                         android:layout_width="wrap_content"
                         android:singleLine="true"
-                        android:text="@{listrectanglethirtynineRowModel.txtNine}"
-                        style="@style/txtMitrlight16" tools:text="@string/lbl2"/>
+                        android:text="@{listrectanglethirtynineRowModel.txtTen}"
+                        style="@style/txtMitrlight16" tools:text="@string/lbl"/>
                 </FrameLayout>
             </FrameLayout>
             <TextView android:ellipsize="end"
@@ -94,15 +94,16 @@
                 android:layout_height="@dimen/_21pxv"
                 android:layout_marginBottom="@dimen/_1pxv"
                 android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_70pxh"/>
-            <TextView android:ellipsize="end" android:id="@+id/txtTen"
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEleven"
                 android:layout_gravity="start"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_10pxh"
                 android:layout_marginStart="@dimen/_8pxh"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
-                android:text="@{listrectanglethirtynineRowModel.txtTen}"
-                style="@style/txtMitrlight16" tools:text="@string/lbl2"/>
+                android:text="@{listrectanglethirtynineRowModel.txtEleven}"
+                style="@style/txtMitrlight16" tools:text="@string/lbl"/>
         </FrameLayout>
         <FrameLayout android:id="@+id/frameStackrectanglefortyoneTwo"
             android:layout_gravity="bottom|start"
@@ -119,15 +120,15 @@
                 android:layout_marginBottom="@dimen/_3pxv"
                 android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_100pxh"/>
             <TextView android:ellipsize="end"
-                android:id="@+id/txtEleven"
+                android:id="@+id/txtTwelve"
                 android:layout_gravity="start"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_10pxh"
                 android:layout_marginStart="@dimen/_8pxh"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
-                android:text="@{listrectanglethirtynineRowModel.txtEleven}"
-                style="@style/txtMitrlight16" tools:text="@string/lbl2"/>
+                android:text="@{listrectanglethirtynineRowModel.txtTwelve}"
+                style="@style/txtMitrlight16" tools:text="@string/lbl"/>
         </FrameLayout>
     </FrameLayout>
 </layout>

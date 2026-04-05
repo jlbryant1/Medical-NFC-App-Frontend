@@ -10,7 +10,6 @@ import com.jamessapplication.app.databinding.ActivityHomescreenBinding
 import com.jamessapplication.app.modules.breathingrate.ui.BreathingRateActivity
 import com.jamessapplication.app.modules.homescreen.`data`.viewmodel.HomescreenVM
 import com.jamessapplication.app.modules.hrv.ui.HrvActivity
-import com.jamessapplication.app.modules.personalprofile.ui.PersonalProfileActivity
 import com.jamessapplication.app.modules.skintemp.ui.SkinTempActivity
 import com.jamessapplication.app.modules.spotwo.ui.SpotwoActivity
 import kotlin.Int
@@ -20,10 +19,10 @@ import kotlin.Unit
 class HomescreenActivity : BaseActivity<ActivityHomescreenBinding>(R.layout.activity_homescreen) {
   private val viewModel: HomescreenVM by viewModels<HomescreenVM>()
 
-  private val REQUEST_CODE_BREATHING_RATE_ACTIVITY: Int = 104
+  private val REQUEST_CODE_BREATHING_RATE_ACTIVITY: Int = 751
 
 
-  private val REQUEST_CODE_HRV_ACTIVITY: Int = 274
+  private val REQUEST_CODE_HRV_ACTIVITY: Int = 540
 
 
   override fun onInitialized(): Unit {
@@ -32,25 +31,21 @@ class HomescreenActivity : BaseActivity<ActivityHomescreenBinding>(R.layout.acti
   }
 
   override fun setUpClicks(): Unit {
-    binding.imageUsersquare.setOnClickListener {
-      val destIntent = PersonalProfileActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
     binding.linearSkinTemp.setOnClickListener {
       val destIntent = SkinTempActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.linearColumnairplaneOne.setOnClickListener {
+    binding.linearColumnobject.setOnClickListener {
       val destIntent = BreathingRateActivity.getIntent(this, null)
       startActivityForResult(destIntent, REQUEST_CODE_BREATHING_RATE_ACTIVITY)
+    }
+    binding.linearColumnobjectTwo.setOnClickListener {
+      val destIntent = SpotwoActivity.getIntent(this, null)
+      startActivity(destIntent)
     }
     binding.linearHeartRate.setOnClickListener {
       val destIntent = HrvActivity.getIntent(this, null)
       startActivityForResult(destIntent, REQUEST_CODE_HRV_ACTIVITY)
-    }
-    binding.linearColumnupload.setOnClickListener {
-      val destIntent = SpotwoActivity.getIntent(this, null)
-      startActivity(destIntent)
     }
   }
 

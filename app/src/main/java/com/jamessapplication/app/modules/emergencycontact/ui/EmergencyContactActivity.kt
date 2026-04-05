@@ -11,7 +11,7 @@ import com.jamessapplication.app.appcomponents.base.BaseActivity
 import com.jamessapplication.app.databinding.ActivityEmergencyContactBinding
 import com.jamessapplication.app.modules.emergencycontact.`data`.model.ListrectanglethirtynineRowModel
 import com.jamessapplication.app.modules.emergencycontact.`data`.viewmodel.EmergencyContactVM
-import com.jamessapplication.app.modules.homescreen.ui.HomescreenActivity
+import com.jamessapplication.app.modules.viewaccount.ui.ViewAccountActivity
 import kotlin.Boolean
 import kotlin.Int
 import kotlin.String
@@ -21,7 +21,7 @@ class EmergencyContactActivity :
     BaseActivity<ActivityEmergencyContactBinding>(R.layout.activity_emergency_contact) {
   private val viewModel: EmergencyContactVM by viewModels<EmergencyContactVM>()
 
-  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 351
+  private val REQUEST_CODE_VIEW_ACCOUNT_ACTIVITY: Int = 620
 
 
   override fun onInitialized(): Unit {
@@ -45,12 +45,12 @@ class EmergencyContactActivity :
   }
 
   override fun setUpClicks(): Unit {
+    binding.linearRowvector.setOnClickListener {
+      val destIntent = ViewAccountActivity.getIntent(this, null)
+      startActivityForResult(destIntent, REQUEST_CODE_VIEW_ACCOUNT_ACTIVITY)
+    }
     binding.imageArrowleft.setOnClickListener {
       finish()
-    }
-    binding.linearRowarrowright.setOnClickListener {
-      val destIntent = HomescreenActivity.getIntent(this, null)
-      startActivityForResult(destIntent, REQUEST_CODE_HOMESCREEN_ACTIVITY)
     }
   }
 

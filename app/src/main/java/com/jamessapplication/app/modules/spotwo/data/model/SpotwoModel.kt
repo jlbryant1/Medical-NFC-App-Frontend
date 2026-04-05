@@ -8,8 +8,7 @@ data class SpotwoModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtBloodOxygenSa: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_blood_oxygen_sa2)
+  var txtUserActivity: String? = MyApp.getInstance().resources.getString(R.string.lbl_user_activity)
   ,
   /**
    * TODO Replace with dynamic value

@@ -9,9 +9,9 @@ import com.jamessapplication.app.R
 import com.jamessapplication.app.appcomponents.base.BaseActivity
 import com.jamessapplication.app.appcomponents.views.ImagePickerFragmentDialog
 import com.jamessapplication.app.databinding.ActivityUserDetailsBinding
+import com.jamessapplication.app.modules.addcontacts.ui.AddContactsActivity
 import com.jamessapplication.app.modules.userdetails.`data`.model.UserDetailsRowModel
 import com.jamessapplication.app.modules.userdetails.`data`.viewmodel.UserDetailsVM
-import com.jamessapplication.app.modules.welcome.ui.WelcomeActivity
 import kotlin.Int
 import kotlin.String
 import kotlin.Unit
@@ -20,7 +20,7 @@ class UserDetailsActivity : BaseActivity<ActivityUserDetailsBinding>(R.layout.ac
     {
   private val viewModel: UserDetailsVM by viewModels<UserDetailsVM>()
 
-  private val REQUEST_CODE_WELCOME_ACTIVITY: Int = 203
+  private val REQUEST_CODE_ADD_CONTACTS_ACTIVITY: Int = 215
 
 
   override fun onInitialized(): Unit {
@@ -42,15 +42,21 @@ class UserDetailsActivity : BaseActivity<ActivityUserDetailsBinding>(R.layout.ac
   }
 
   override fun setUpClicks(): Unit {
-    binding.btnEdit.setOnClickListener {
+    binding.btnFrame150.setOnClickListener {
+      ImagePickerFragmentDialog().show(supportFragmentManager)
+      { path ->//TODO HANDLE DATA
+      }
+
+    }
+    binding.viewEllipseSix.setOnClickListener {
       ImagePickerFragmentDialog().show(supportFragmentManager)
       { path ->//TODO HANDLE DATA
       }
 
     }
     binding.btnVerify.setOnClickListener {
-      val destIntent = WelcomeActivity.getIntent(this, null)
-      startActivityForResult(destIntent, REQUEST_CODE_WELCOME_ACTIVITY)
+      val destIntent = AddContactsActivity.getIntent(this, null)
+      startActivityForResult(destIntent, REQUEST_CODE_ADD_CONTACTS_ACTIVITY)
     }
   }
 

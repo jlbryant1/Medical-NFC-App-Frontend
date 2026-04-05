@@ -52,7 +52,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9_4" tools:text="@string/lbl_100"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_402"
                     android:id="@+id/lineLineTwelve"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_5pxv"
@@ -74,7 +74,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9_3" tools:text="@string/lbl_97"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_402"
                     android:id="@+id/lineLineTwelveOne"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_5pxv"
@@ -96,7 +96,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9_2" tools:text="@string/lbl_94"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_402"
                     android:id="@+id/lineLineTwelveTwo"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_5pxv"
@@ -118,7 +118,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9_1" tools:text="@string/lbl_91"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_402"
                     android:id="@+id/lineLineTwelveThree"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_5pxv"
@@ -140,7 +140,7 @@
                     android:textAllCaps="true"
                     style="@style/txtNunitoSanssemibold9" tools:text="@string/lbl_88"/>
                 <View
-                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_401"
+                    android:background="@drawable/rectangle_gradient_s_bluegray_300_e_bluegray_402"
                     android:id="@+id/lineLineTwelveFour"
                     android:layout_height="@dimen/_1pxv"
                     android:layout_marginBottom="@dimen/_5pxv"
@@ -229,7 +229,7 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             itemSpace="@{@dimen/_8pxh}" tools:itemCount="2" tools:listitem="@layout/row_breathing_rate"/>
         <LinearLayout android:gravity="center_vertical"
-            android:id="@+id/linearRowarrowright"
+            android:id="@+id/linearRowvector"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_18pxv"
             android:layout_marginEnd="@dimen/_10pxh"
@@ -237,7 +237,7 @@
             android:layout_marginTop="@dimen/_67pxv"
             android:layout_width="wrap_content"
             android:orientation="horizontal" style="@style/groupStyleamber_600cornerRadius">
-            <ImageView android:id="@+id/imageArrowright"
+            <ImageView android:id="@+id/imageVector"
                 android:layout_height="@dimen/_18pxh"
                 android:layout_marginBottom="@dimen/_14pxv"
                 android:layout_marginStart="@dimen/_9pxh"

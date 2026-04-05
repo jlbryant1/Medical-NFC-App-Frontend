@@ -8,14 +8,8 @@ data class LoginModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtMINTHealthDat: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_mint_health_dat)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
-  var txtConfirmation: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_don_t_have_an_a)
+  var txtHealthDataMan: String? =
+      MyApp.getInstance().resources.getString(R.string.msg_health_data_man)
   ,
   /**
    * TODO Replace with dynamic value

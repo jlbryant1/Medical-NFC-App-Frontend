@@ -18,7 +18,7 @@ data class ListrectanglethirtynineRowModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtNine: String? = MyApp.getInstance().resources.getString(R.string.lbl2)
+  var txtTen: String? = MyApp.getInstance().resources.getString(R.string.lbl)
   ,
   /**
    * TODO Replace with dynamic value
@@ -28,11 +28,11 @@ data class ListrectanglethirtynineRowModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtTen: String? = MyApp.getInstance().resources.getString(R.string.lbl2)
+  var txtEleven: String? = MyApp.getInstance().resources.getString(R.string.lbl)
   ,
   /**
    * TODO Replace with dynamic value
    */
-  var txtEleven: String? = MyApp.getInstance().resources.getString(R.string.lbl2)
+  var txtTwelve: String? = MyApp.getInstance().resources.getString(R.string.lbl)
 
 )

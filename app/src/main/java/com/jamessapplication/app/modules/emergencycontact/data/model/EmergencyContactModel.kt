@@ -13,6 +13,6 @@ data class EmergencyContactModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtGetStarted: String? = MyApp.getInstance().resources.getString(R.string.lbl_back_to_home)
+  var txtGetStarted: String? = MyApp.getInstance().resources.getString(R.string.lbl_save)
 
 )

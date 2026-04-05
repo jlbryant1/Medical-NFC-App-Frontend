@@ -8,8 +8,7 @@ data class HrvModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtHeartRateVari: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_heart_rate_var)
+  var txtHeartRate: String? = MyApp.getInstance().resources.getString(R.string.lbl_heart_rate)
   ,
   /**
    * TODO Replace with dynamic value

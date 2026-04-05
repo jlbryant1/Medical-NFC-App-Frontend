@@ -7,9 +7,8 @@ import androidx.activity.viewModels
 import com.jamessapplication.app.R
 import com.jamessapplication.app.appcomponents.base.BaseActivity
 import com.jamessapplication.app.databinding.ActivitySignUpBinding
-import com.jamessapplication.app.modules.login.ui.LoginActivity
+import com.jamessapplication.app.modules.completesetup.ui.CompleteSetupActivity
 import com.jamessapplication.app.modules.signup.`data`.viewmodel.SignUpVM
-import com.jamessapplication.app.modules.userdetails.ui.UserDetailsActivity
 import kotlin.Int
 import kotlin.String
 import kotlin.Unit
@@ -17,7 +16,7 @@ import kotlin.Unit
 class SignUpActivity : BaseActivity<ActivitySignUpBinding>(R.layout.activity_sign_up) {
   private val viewModel: SignUpVM by viewModels<SignUpVM>()
 
-  private val REQUEST_CODE_USER_DETAILS_ACTIVITY: Int = 737
+  private val REQUEST_CODE_COMPLETE_SETUP_ACTIVITY: Int = 325
 
 
   override fun onInitialized(): Unit {
@@ -26,13 +25,9 @@ class SignUpActivity : BaseActivity<ActivitySignUpBinding>(R.layout.activity_sig
   }
 
   override fun setUpClicks(): Unit {
-    binding.txtConfirmation.setOnClickListener {
-      val destIntent = LoginActivity.getIntent(this, null)
-      startActivity(destIntent)
-    }
     binding.btnGetStarted.setOnClickListener {
-      val destIntent = UserDetailsActivity.getIntent(this, null)
-      startActivityForResult(destIntent, REQUEST_CODE_USER_DETAILS_ACTIVITY)
+      val destIntent = CompleteSetupActivity.getIntent(this, null)
+      startActivityForResult(destIntent, REQUEST_CODE_COMPLETE_SETUP_ACTIVITY)
     }
   }
 

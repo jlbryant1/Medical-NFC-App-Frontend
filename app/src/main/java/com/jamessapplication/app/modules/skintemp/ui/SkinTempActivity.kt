@@ -18,7 +18,7 @@ import kotlin.Unit
 class SkinTempActivity : BaseActivity<ActivitySkinTempBinding>(R.layout.activity_skin_temp) {
   private val viewModel: SkinTempVM by viewModels<SkinTempVM>()
 
-  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 448
+  private val REQUEST_CODE_HOMESCREEN_ACTIVITY: Int = 792
 
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
@@ -38,7 +38,7 @@ class SkinTempActivity : BaseActivity<ActivitySkinTempBinding>(R.layout.activity
   }
 
   override fun setUpClicks(): Unit {
-    binding.linearRowarrowright.setOnClickListener {
+    binding.linearRowvector.setOnClickListener {
       val destIntent = HomescreenActivity.getIntent(this, null)
       startActivityForResult(destIntent, REQUEST_CODE_HOMESCREEN_ACTIVITY)
     }

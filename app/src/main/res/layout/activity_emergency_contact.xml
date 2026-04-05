@@ -10,21 +10,21 @@
         android:orientation="vertical" style="@style/groupStyleindigo_50">
         <ImageView android:id="@+id/imageArrowleft"
             android:layout_gravity="start"
-            android:layout_height="@dimen/_21pxh"
-            android:layout_marginEnd="@dimen/_20pxh"
-            android:layout_marginStart="@dimen/_20pxh"
-            android:layout_marginTop="@dimen/_26pxv"
-            android:layout_width="@dimen/_25pxh"
+            android:layout_height="@dimen/_25pxh"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="@dimen/_32pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_arrowleft_amber_a700"
-            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_amber_a700"/>
+            android:src="@drawable/img_arrowleft"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
         <TextView android:ellipsize="end"
             android:gravity="center_horizontal"
             android:id="@+id/txtLanguage"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_13pxh"
             android:layout_marginStart="@dimen/_13pxh"
-            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_marginTop="@dimen/_15pxv"
             android:layout_width="match_parent"
             android:lineSpacingExtra="@dimen/_4pxh"
             android:singleLine="true"
@@ -54,7 +54,7 @@
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             itemSpace="@{@dimen/_1pxh}" tools:itemCount="3" tools:listitem="@layout/row_listrectanglethirtynine"/>
         <LinearLayout android:gravity="center_vertical"
-            android:id="@+id/linearRowarrowright"
+            android:id="@+id/linearRowvector"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_125pxv"
             android:layout_marginEnd="@dimen/_13pxh"
@@ -62,10 +62,10 @@
             android:layout_marginTop="@dimen/_107pxv"
             android:layout_width="wrap_content"
             android:orientation="horizontal" style="@style/groupStyleamber_600cornerRadius">
-            <ImageView android:id="@+id/imageArrowright"
+            <ImageView android:id="@+id/imageVector"
                 android:layout_height="@dimen/_18pxh"
                 android:layout_marginBottom="@dimen/_14pxv"
-                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_41pxh"
                 android:layout_marginTop="@dimen/_14pxv"
                 android:layout_width="@dimen/_21pxh"
                 android:scaleType="fitXY"
@@ -75,13 +75,13 @@
                 android:id="@+id/txtGetStarted"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_11pxv"
-                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginEnd="@dimen/_41pxh"
                 android:layout_marginStart="@dimen/_12pxh"
                 android:layout_marginTop="@dimen/_12pxv"
-                android:layout_weight="0.82" android:layout_width="0dp"
+                android:layout_weight="0.6" android:layout_width="0dp"
                 android:singleLine="true"
                 android:text="@{emergencyContactVM.emergencyContactModel.txtGetStarted}"
-                style="@style/txtMitrmedium14" tools:text="@string/lbl_back_to_home"/>
+                style="@style/txtMitrmedium14" tools:text="@string/lbl_save"/>
         </LinearLayout>
     </LinearLayout>
 </layout>
